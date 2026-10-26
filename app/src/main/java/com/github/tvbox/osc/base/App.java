@@ -134,6 +134,7 @@ public class App extends MultiDexApplication {
         // Hawk
         Hawk.init(this).build();
         Hawk.put(HawkConfig.DEBUG_OPEN, false);
+        putDefault(HawkConfig.API_URL, "https://tv.199075.xyz"); // 大嗓门之家：首次启动预置我们的 19 源
 
         // 首页选项
         putDefault(HawkConfig.HOME_SHOW_SOURCE, true);       //数据源显示: true=开启, false=关闭
